@@ -1,2 +1,2 @@
 # HeyFoodie
-Designing with HTML and CSS
+Sample SPA with HTML and CSS
