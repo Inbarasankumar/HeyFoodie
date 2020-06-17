@@ -4,31 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@200;300;400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" type="text/css" href="./Vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="./Vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="./Resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./Resources/css/queries.css">
     <title>Hey Foodie</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="row">
-                <ul class="main-nav">
-                    <li><a href="#">Food delivery</a></li>
-                    <li><a href="#">How it works</a></li>
-                    <li><a href="#">Our cities</a></li>
-                    <li><a href="#">Sign up</a></li>
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Food delivery</a></li>
+                    <li><a href="#works">How it works</a></li>
+                    <li><a href="#cities">Our cities</a></li>
+                    <li><a href="#plans">Sign up</a></li>
                 </ul>
+                <a class="mobile-nav-icon "><ion-icon name="menu-outline" class="js--nav-icon"></ion-icon>
+                </a>
             </div>
         </nav>
         <div class="hero-text">
             <h1>Goodbye junk food.<br>Hello super healthy meals</h1>
-            <a class="btn btn-full" href="#">I'm Hungry</a>
-            <a class="btn btn-outline" href="#">Show me more</a>
+            <a class="btn btn-full js--scroll-to-plans" href="#">I'm Hungry</a>
+            <a class="btn btn-outline js--scroll-to-start" href="#">Show me more</a>
         </div>
     </header>
     
-    <section class="section-features">
+    <section class="section-features js--section-features">
         <div class="row">
             <h2>Get food fast &mdash; not fast food.</h2>
             <p class="long-copy">Hello, we’re HeyFoodie, your new premium food delivery service. We know you’re always busy. No time for cooking. 
@@ -245,7 +249,7 @@
             </div>
         </div>
     </section>
-    <section class="section-plans">
+    <section class="section-plans js--section-plans">
         <div class="row">
             <h2>Start eating healthy today</h2>
         </div>
@@ -417,6 +421,12 @@
             </p>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+    <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+    <script src="Vendors/js/jquery.waypoints.min.js"></script>
+    <script src="Resources/js/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 </body>
 </html>
